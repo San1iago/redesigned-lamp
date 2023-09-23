@@ -1,0 +1,18 @@
+bombillo_encendido = False
+
+def toggle_bombillo():
+    global bombillo_encendido
+    bombillo_encendido = not bombillo_encendido
+def interruptor_piso1():
+    toggle_bombillo()
+def interruptor_piso2():
+    toggle_bombillo()
+
+interruptor_piso1()
+print(bombillo_encendido)
+interruptor_piso2()
+print(bombillo_encendido)
+interruptor_piso2()
+print(bombillo_encendido)
+interruptor_piso1()
+print(bombillo_encendido)
